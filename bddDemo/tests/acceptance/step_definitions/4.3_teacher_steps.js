@@ -22,20 +22,6 @@ Given('There is no attendance data for the class', function () {
     this.teacher = new Teacher(attendanceData);
 });
 
-Given('Some students have missing data', function () {
-    // Write code here that turns the phrase above into concrete actions
-    const attendanceData = [
-        { date: '2024-07-01', student_id: 1, status: 'present' },
-        { date: '2024-07-02', student_id: 1, status: 'absent' },
-        { date: '2024-07-01', student_id: 2, status: 'present' },
-        { date: '2024-07-02', student_id: 2, status: 'present' },
-        { date: '2024-07-01', student_id: 3, status: 'absent' },
-        { date: '2024-07-02', student_id: 4, status: 'present' },
-      ];
-    
-    this.teacher = new Teacher(attendanceData);
-});
-
 When('I view the attendance overview', function () {
 // Write code here that turns the phrase above into concrete actions
     this.overview = this.teacher.classAttendanceOverview();
