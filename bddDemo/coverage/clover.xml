@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1720418720876" clover="3.2.0">
-  <project timestamp="1720418720876" name="All files">
+<coverage generated="1720420971042" clover="3.2.0">
+  <project timestamp="1720420971042" name="All files">
     <metrics statements="37" coveredstatements="21" conditionals="12" coveredconditionals="7" methods="16" coveredmethods="7" elements="65" coveredelements="35" complexity="0" loc="37" ncloc="37" packages="1" files="2" classes="2"/>
-    <file name="groceryCart.js" path="C:\Users\Jia Yong\Desktop\ACCAD\bddDemo (Student Copy)\src\groceryCart.js">
+    <file name="groceryCart.js" path="C:\Users\mchan\OneDrive\Documents\GitHub\ACCAD3\bddDemo\src\groceryCart.js">
       <metrics statements="16" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="9" coveredmethods="5"/>
       <line num="3" count="0" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
@@ -21,7 +21,7 @@
       <line num="45" count="7" type="stmt"/>
       <line num="49" count="1" type="stmt"/>
     </file>
-    <file name="user.js" path="C:\Users\Jia Yong\Desktop\ACCAD\bddDemo (Student Copy)\src\user.js">
+    <file name="user.js" path="C:\Users\mchan\OneDrive\Documents\GitHub\ACCAD3\bddDemo\src\user.js">
       <metrics statements="21" coveredstatements="10" conditionals="8" coveredconditionals="4" methods="7" coveredmethods="2"/>
       <line num="3" count="0" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
