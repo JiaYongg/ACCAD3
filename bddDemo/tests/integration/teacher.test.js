@@ -1,4 +1,4 @@
-const { Teacher, AttendanceError } = require('../../src/teacher');
+const { Teacher, AttendanceError } = require('../../src/teacherClass');
 
 describe('Teacher Class Integration Tests', () => {
   let teacher;
@@ -44,7 +44,6 @@ describe('Teacher Class Integration Tests', () => {
 
     expect(overview).toEqual({
       '2024-07-01': { present: 8, absent: 2 },
-      // Additional dates can be added as needed
     });
   });
 
@@ -52,8 +51,7 @@ describe('Teacher Class Integration Tests', () => {
     const trends = teacher.attendanceTrendsAnalysis();
 
     expect(trends).toEqual({
-      6: { present: 8, absent: 2 }, // July is month 6 in JavaScript's Date object
-      // Additional months can be added as needed
+      "July": { present: 8, absent: 2 }, // July is month 6 in JavaScript's Date object
     });
   });
 
