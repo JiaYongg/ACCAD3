@@ -4,6 +4,6 @@ Feature: Student Attendance Summary
     # So that I can identify patterns and issues
 
     Scenario:
-        Given a teacher has a class with 10 students
+        Given the teacher has a class with 10 students
         When the teacher views the attendance summary
         Then the summary should show the attendance of each student
