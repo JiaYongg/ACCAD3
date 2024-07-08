@@ -56,8 +56,15 @@ class Teacher {
 
   // User Story 4.4: Attendance Trends Analysis
   attendanceTrendsAnalysis() {
+
+    const monthNames = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
     const trends = this.attendanceData.reduce((acc, record) => {
-      const month = new Date(record.date).getMonth();
+      const monthIndex = new Date(record.date).getMonth();
+      const month = monthNames[monthIndex];
       if (!acc[month]) {
         acc[month] = { present: 0, absent: 0 };
       }
