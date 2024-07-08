@@ -39,9 +39,14 @@ class Teacher {
 
   // User Story 4.3: Class Attendance Overview
   classAttendanceOverview() {
+
+    if (this.attendanceData.Length === 0){
+        return {message: 'No attendance data available'};
+    }
+
     const overview = this.attendanceData.reduce((acc, record) => {
       if (!acc[record.date]) {
-        acc[record.date] = { present: 0, absent: 0 };
+        acc[record.date] = { present: 0, absent: 0};
       }
       acc[record.date][record.status]++;
       return acc;
