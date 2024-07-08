@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "npm run test:unit && npm run test:acceptance",
+    "test:unit": "jest --testMatch='**/unit/**/*.test.js' --coverage",
+    "test:integration": "jest --testMatch='**/integration/**/*.test.js' --coverage",
+    "test:acceptance": "cucumber-js --config cucumber.js --require tests/acceptance/step_definitions",
+    "test:acceptance:dry": "cucumber-js --config cucumber.js --require tests/acceptance/step_definitions --dry-run"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "expect": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
